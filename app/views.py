@@ -43,12 +43,12 @@ def contact():
 
 def send_mail(from_name, from_addr, subject, msg):
     to_name = "Test"
-    to_addr = "10thfloor@live.com"
+    to_addr = ""
     message = """From: {} <{}>\nTo: {} <{}>\nSubject: {}\n{}"""
     message_to_send = message.format(from_name, from_addr, to_name, to_addr, subject, msg)
     # Credentials (if needed)
-    username = 'gluttonj@gmail.com'
-    password = 'ljiqlfkauzrlinqk'
+    username = ''
+    password = ''
     # The actual mail send
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
